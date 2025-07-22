@@ -10,13 +10,11 @@ body {
     color: #0b0a0a;
     background-image: url('./img/verd.jpeg');
     background-size: cover;
-
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    overflow-x: hidden;
 }
 
 p,
@@ -144,7 +142,7 @@ main {
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
-    margin-top: -35%;
+    margin-top: -41%;
     margin-left: -5%;
 
 }
@@ -179,6 +177,26 @@ main {
     text-align: center;
 }
 
+.download {
+    padding: 15px 24px;
+    background-color: #6C8D53;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-left: 63%;
+    margin-top: 3%;
+    border: 1px solid #0be22fdd;
+
+
+}
+
+.download:hover {
+    background-color: #45a049;
+}
+
 .icones {
     display: flex;
     justify-content: center;
@@ -207,16 +225,127 @@ main {
     font-family: 'Bodoni Moda', serif;
 }
 
+.atendimento {
+    width: 100%;
+    height: 200vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+    background-image: url('./img/atendimentos.png');
+}
+
+.ilustracao3 {
+    width: 100%;
+    min-height: 130vh;
+    background-image: url('./img/asc.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin-top: -65%;
+}
+
+.titulo4 {
+    font-size: 32px;
+    font-family: 'Bodoni Moda', serif;
+    margin-top: 4%;
+    color: #6C8D53;
+    max-height: 700px;
+    text-align: center;
+
+}
+
+.atendimento .icones {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 5% -5% 0 9%;
+}
+
+.atendimento .icone-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 900px;
+}
+
+.atendimento .icone-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-top: 5px;
+}
+
+.text1 {
+    font-size: 18px;
+    color: #1d2c1c;
+    font-family: 'Bodoni Moda', serif;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 650px;
+}
+
+.footer {
+    background-color: #2e7d5f;
+    color: #ffffff;
+    width: 100%;
+    padding: 20px 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0%
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-left strong {
+    color: #b2dfdb;
+    /* Verde claro suave para destaque */
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right p {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+
+.linkedin-icons {
+    display: flex;
+    gap: 14px;
+    justify-content: flex-end;
+}
+
+.linkedin-icons a img {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+.linkedin-icons a img:hover {
+    transform: scale(1.12);
+    filter: brightness(1.4);
+}
+
 /*responsividade*/
 
 @media (max-width: 1200px) {
-    .body {
-        width: 100%;
-        height: 100%;
-        padding-inline: 5%;
-        margin-bottom: 20px;
-    }
-
     .conteudo {
         flex-direction: column;
     }
@@ -229,11 +358,19 @@ main {
 
     .descricao {
         order: 2;
+        text-align: center;
+        align-items: center;
     }
-
 }
 
 @media (max-width: 768px) {
+
+    .body {
+        width: 100%;
+        height: 200vh;
+
+    }
+
     .header {
         width: 100%;
         height: 128px;
@@ -241,65 +378,158 @@ main {
 
     .header.logo {
         height: 64px;
-
     }
 
     .ilustracao {
         height: 240px;
     }
 
-    .descricao .titulo {
-        font-size: 40px;
-        line-height: 44px;
-        font-weight: 800;
-        width: 270px;
+    .descricao h2 {
+        font-size: 32px;
+        line-height: 40px;
+        width: 100%;
+        text-align: center;
     }
 
     .descricao p {
         font-size: 16px;
         line-height: 24px;
-        font-weight: 500;
+        width: 100%;
+        text-align: center;
     }
 
     .botoes {
         flex-direction: column;
         height: 100%;
+        align-items: center;
     }
 
     .botao {
         width: 100%;
-    }
-}
-
-@media (max-width: 500px) {
-    .header {
-        justify-content: center;
+        margin-bottom: 10px;
     }
 
-    .header .nav-links {
-        display: none;
+    .titulo2 {
+        margin: 30px auto;
+        text-align: center;
+        font-size: 28px;
+        width: auto;
     }
 
-}
-
-@media (max-width: 390px) {
-    .header {
-        height: 96px;
-    }
-
-    .header img {
-        width: 150px;
+    .sobre-mim {
         height: auto;
-
+        background-size: cover;
+        padding-bottom: 20px;
+        background-color: #f3f0fa;
+        background-image: none;
     }
 
-    header.logo {
-        height: 48px;
-
+    .sobre-mim p {
+        margin: 20px auto;
+        text-align: center;
+        padding: 0 10px;
+        font-size: 16px;
     }
 
-    .ilustracao {
-        height: 184px;
+    .ilustracao2 {
+        min-height: 500px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 20px;
+        margin-left: 0;
     }
 
+    .ilustracao3 {
+        min-height: 400px;
+        background-size: contain;
+        background-position: center;
+        margin-top: -20px;
+    }
+
+    .atendimento {
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 30px;
+    }
+
+    .atendimento .icone-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .atendimento .icones {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .text1 {
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .footer {
+        margin-top: -30px;
+    }
+
+    .icones {
+        display: flex;
+        gap: 80px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+
+    .icone-item img {
+        width: 75%;
+        height: 20vh;
+    }
+
+    .download {
+        margin-left: 35%;
+    }
+
+    @media (max-width: 500px) {
+        .header {
+            justify-content: center;
+        }
+
+        .header .nav-links {
+            display: none;
+        }
+
+        .atendimento .icone-item img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .botoes {
+            width: 60%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    @media (max-width: 390px) {
+        .header {
+            height: 96px;
+        }
+
+        .header img {
+            width: 150px;
+            height: auto;
+        }
+
+        header.logo {
+            height: 48px;
+        }
+
+        .ilustracao {
+            height: 184px;
+        }
+    
+    }
 }
